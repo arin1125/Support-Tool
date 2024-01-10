@@ -47,7 +47,7 @@ public partial class AppUpdateSettingViewModel : ObservableObject
             {
                 //Todo: Fix UserName and Repo
                 string username = "arin1125";
-                string repo = "";
+                string repo = "Support-Tool";
                 var update = await UpdateHelper.CheckUpdateAsync(username, repo, new Version(App.Current.AppVersion));
                 if (update.IsExistNewVersion)
                 {
@@ -79,7 +79,7 @@ public partial class AppUpdateSettingViewModel : ObservableObject
     private async Task GoToUpdateAsync()
     {
         //Todo: Change Uri
-        await Launcher.LaunchUriAsync(new Uri("https://github.com/WinUICommunity/WinUICommunity/releases"));
+        await Launcher.LaunchUriAsync(new Uri("https://github.com/arin1125/Support-Tool/releases"));
     }
 
     [RelayCommand]
