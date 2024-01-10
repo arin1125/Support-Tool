@@ -1,0 +1,23 @@
+﻿{
+  "Groups": [
+    {
+      "UniqueId": "Support_Tool",
+      "Title": "Support_Tool",
+      "ImagePath": "ms-appx:///Assets/icon.png",
+      "ImageIconPath": "ms-appx:///Assets/icon.png",
+      "IsSpecialSection": false,
+      "ShowItemsWithoutGroup": true,
+      "IsExpanded": false,
+      "Items": [
+        {
+          "UniqueId": "Support_Tool.Views.HomeLandingPage",
+          "Title": "Support_Tool",
+          "Subtitle": "Support_Tool",
+          "ImagePath": "ms-appx:///Assets/icon.png",
+          "ImageIconPath": "ms-appx:///Assets/icon.png",
+          "HideItem": true
+        }
+      ]
+    }
+  ]
+}

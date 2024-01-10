@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="Support_Tool.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wuc="using:WinUICommunity"
+    mc:Ignorable="d">
+    <ScrollView
+        Margin="{ThemeResource ContentPageMargin}"
+        HorizontalAlignment="Stretch"
+        VerticalScrollBarVisibility="Auto">
+        <StackPanel
+            Margin="10"
+            wuc:PanelAttach.ChildrenTransitions="Default"
+            Spacing="5">
+            <wuc:SettingsCard x:Name="GeneralSetting"
+                              Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                              CommandParameter="{Binding ElementName=GeneralSetting}"
+                              Description="Change your app Settings"
+                              Header="General"
+                              HeaderIcon="{wuc:BitmapIcon Source=Assets/Fluent/settings.png}"
+                              IsClickEnabled="True"
+                              Tag="GeneralSettingPage" />
+            <wuc:SettingsCard x:Name="AppUpdateSetting"
+                              Command="{x:Bind ViewModel.GoToSettingPageCommand}"
+                              CommandParameter="{Binding ElementName=AppUpdateSetting}"
+                              Description="Check for Updates"
+                              Header="Update App"
+                              HeaderIcon="{wuc:BitmapIcon Source=Assets/Fluent/update.png}"
+                              IsClickEnabled="True"
+                              Tag="AppUpdateSettingPage" />
+
+        </StackPanel>
+    </ScrollView>
+</Page>
+
